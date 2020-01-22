@@ -7,8 +7,15 @@ def checkio(number: int) -> str:
     # It's main function. Don't remove this function
     # It's using for auto-testing and must return a result for check.
 
-    # replace this for solution
-    return 'Fizz Buzz'
+    if not number % 5 and not number % 3:
+        return 'Fizz Buzz'
+    elif not number % 3:
+        return 'Fizz'
+    elif not number % 5:
+        return 'Buzz'
+    else:
+        return str(number)
+
 
 # Some hints:
 # Convert a number in the string with str(n)
